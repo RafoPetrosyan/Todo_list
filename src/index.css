@@ -5,9 +5,96 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #c1c9df;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  color: red;
+}
+.form{
+  width: 500px;
+  display: flex ;
+}
+.formInput{
+  width: 90%;
+  height: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.formBtn{
+  width: 10%;
+  cursor: pointer;
+  background-color: aqua;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+.formBtn:hover{
+  background-color: azure;
+}
+.divItem{
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #777;
+  border-left: 1px solid #777;
+  margin-top: 10px;
+}
+.itemSpan{
+  font-size: 17px;
+  font-weight: bold;
+  width: 80%;
+}
+.divItemInput{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.divItemBtn{
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  background-color: cadetblue;
+  color: red;
+}
+.divItemBtn:hover{
+  background-color: red;
+  color: black;
+}
+.footer{
+  margin-top: 10px;
+  width: 500px;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+.footerBtn{
+  cursor: pointer;
+  background-color: cadetblue;
+  font-weight: bold;
+}
+.footerBtn:hover{
+  background-color: white;
+}
+@media screen and (max-width: 530px) {
+  .form, .divItem, .footer, .todo{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .formBtn{
+    width: 20%;
+  }
+  .formInput{
+    width: 80%;
+  }
 }
